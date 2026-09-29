@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5d55e8">
+  <title>علوم‌یار | سامانه کلاس هوشمند علوم چهارم دبستان</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <aside id="sidebar" aria-label="منوی اصلی">
+    <div class="logo">🔬 <b>علوم‌یار</b><small>کلاس هوشمند علوم چهارم</small></div>
+    <div id="mini"></div>
+    <nav>
+      <button data-page="home">🏠 داشبورد</button>
+      <button data-page="students">👩‍🎓 دانش‌آموزان</button>
+      <button data-page="lessons">📚 درس‌ها</button>
+      <button data-page="book">📖 کتاب PDF</button>
+      <button data-page="quiz">🧠 آزمون</button>
+      <button data-page="labs">🧪 آزمایشگاه</button>
+      <button data-page="anatomy">🧍 آناتومی بدن</button>
+      <button data-page="profile">👤 پروفایل</button>
+      <button data-page="awards">🏆 افتخارات</button>
+      <button data-page="teacher">👨‍🏫 پنل معلم</button>
+      <button data-page="backup">💾 پشتیبان</button>
+      <button id="reset" class="dark">♻️ بازنشانی کلاس</button>
+    </nav>
+  </aside>
+
+  <main>
+    <header>
+      <button id="menu" type="button" aria-label="باز کردن منو">☰</button>
+      <div><h1 id="title">داشبورد کلاس</h1><p id="sub">یادگیری، تجربه و کشف</p></div>
+      <span id="date"></span>
+    </header>
+    <section id="view"></section>
+  </main>
+
+  <div id="modal" aria-hidden="true">
+    <div id="modalbox" role="dialog" aria-modal="true" aria-labelledby="modal-title"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
